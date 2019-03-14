@@ -1,0 +1,59 @@
+<soapenv:Envelope xmlns:b2b="http://b2b.ezdravie.sk" xmlns:pat="http://iam.ehealth.sk/2017-03/PatientPresenceConfirmationResponse.xsd" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://schemas.ezdravie.sk/b2b/types" xmlns:xd="http://www.w3.org/2000/09/xmldsig#">
+    <soapenv:Header>
+    </soapenv:Header>
+    <soapenv:Body>
+        <b2b:UlozPreskripcnyZaznam>
+            <b2b:Vstup>
+                <b2b:TokenPouzivatela>
+                    <b2b:Login>xxx_test</b2b:Login>
+                    <b2b:DodavatelSW>XXX</b2b:DodavatelSW>
+                </b2b:TokenPouzivatela>
+                <b2b:PreskripcnyZaznam>
+                    <!--Optional:-->
+                    <typ:ExternyIdentifikatorRiadku>1254789</typ:ExternyIdentifikatorRiadku>
+                    <typ:ICOHlavnaZlozkaVykaz>88888888</typ:ICOHlavnaZlozkaVykaz>
+                    <!--Optional:-->
+                    <typ:KodNizsiaZlozkaPredpisujucehoLekara>P000000020201</typ:KodNizsiaZlozkaPredpisujucehoLekara>
+                    <typ:KodPredpisujuciLekar>A000000000</typ:KodPredpisujuciLekar>
+                    <typ:MenoPredpisujucehoLekara>Dr. Bernau</typ:MenoPredpisujucehoLekara>
+                    <typ:RodneCisloVykazane>11111111111</typ:RodneCisloVykazane>
+                    <typ:Datum2Vykazany>2017-11-01</typ:Datum2Vykazany>
+                    <!--Optional:-->
+                    <typ:KodProduktPZSVykaz>C000000</typ:KodProduktPZSVykaz>
+                    <typ:Davkovanie>
+                        <typ:TypDavkovania>PEV</typ:TypDavkovania>
+                        <typ:DenneDavkovanie2>
+                            <typ:PocetJednotiek>23</typ:PocetJednotiek>
+                            <typ:OpakovanieVHodinach>12</typ:OpakovanieVHodinach>
+                        </typ:DenneDavkovanie2>
+                        <typ:JednotkaDavkovania>INH</typ:JednotkaDavkovania>
+                        <typ:SposobPodania>IN</typ:SposobPodania>
+                        <typ:Periodicita>M</typ:Periodicita>
+                        <typ:DobaLiecby>39</typ:DobaLiecby>
+                        <typ:Poznamka>qwaqwaqwa</typ:Poznamka>
+                        <typ:PrepisDavkovania>Zajtra ráno na lačno</typ:PrepisDavkovania>
+                    </typ:Davkovanie>
+                    <typ:KodATCVykazany>L01AX04</typ:KodATCVykazany>
+                    <typ:ATCDoplnok>do žily</typ:ATCDoplnok>
+                    <typ:KodDiagnozaVykazana>W52.1</typ:KodDiagnozaVykazana>
+                    <typ:MnozstvoVykazane>5</typ:MnozstvoVykazane>
+                    <typ:KodOdporucajucaNZ>P86299271201</typ:KodOdporucajucaNZ>
+                    <typ:KodOdporucajuciLekar>A55054271</typ:KodOdporucajuciLekar>
+                    <typ:MenoOdporucajucehoLekara>Salomon Solomon</typ:MenoOdporucajucehoLekara>
+                    <typ:NeodkladnaZS>true</typ:NeodkladnaZS>
+                    <typ:Neplatic>false</typ:Neplatic>
+                    <typ:PoznamkaZP>qweqweqwe</typ:PoznamkaZP>
+                    <typ:ZakazVydaniaNahrady>true</typ:ZakazVydaniaNahrady>
+                    <typ:ZakazaneLieky>
+                        <typ:ZakazanyLiek>C95220</typ:ZakazanyLiek>
+                        <typ:ZakazanyLiek>C35816</typ:ZakazanyLiek>
+                        <typ:ZakazanyLiek>C30124</typ:ZakazanyLiek>
+                    </typ:ZakazaneLieky>
+                    <typ:VynutenyZapis>true</typ:VynutenyZapis>
+                    <typ:VynutenyZapisDovod>nepoviem, lebo neviem</typ:VynutenyZapisDovod>
+                    <typ:DatumOdporucania>2018-02-12</typ:DatumOdporucania>
+                </b2b:PreskripcnyZaznam>
+            </b2b:Vstup>
+        </b2b:UlozPreskripcnyZaznam>
+    </soapenv:Body>
+</soapenv:Envelope>
