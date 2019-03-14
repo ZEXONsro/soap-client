@@ -16,6 +16,7 @@ use RobRichards\XMLSecLibs\XMLSecurityKey;
 /**
  * Class WsseMiddleware
  *
+ * @group Middleware
  * @package PhproTest\SoapClient\Unit\Middleware
  */
 class WsseMiddlewareTest extends TestCase
