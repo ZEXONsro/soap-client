@@ -9,6 +9,12 @@
       "email": "toon.verwerft@phpro.be"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "github-wsse-php-repo:ZEXONsro/wse-php.git"
+    }
+  ],
   "require": {
     "php": "^7.0",
     "ext-soap": "*",
@@ -41,7 +47,7 @@
     "phpspec/prophecy": "~1.7",
     "phpunit/phpunit": "~6.0",
     "psr/http-message": "^1.0",
-    "robrichards/wse-php": "^2.0.2",
+    "robrichards/wse-php": "dev-zexon-master",
     "robrichards/xmlseclibs": "^3.0",
     "squizlabs/php_codesniffer": "~2.7",
     "zendframework/zend-code": "^3.1.0"
